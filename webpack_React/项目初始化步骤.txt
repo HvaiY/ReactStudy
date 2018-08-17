@@ -1,7 +1,8 @@
 //地址 ：git remote add origin https://github.com/HvaiY/ReactStudy.git
   //git config --global user.name Test
   //git config --global user.email Test@qq.com
-
+  
+  如果出现错误 就不要用cnpm 了  直接使用npm
 1. npm init -y  也可以使用 cnpm 处理 ：npm i cnpm -g （全局运行）
 2. 在项目中创建src和dist文件夹(dist项目完成的文件夹)
 3. 在src 目录下创建index.html
@@ -40,7 +41,7 @@
                 
                 //ES6 向外导出模块api 是 export default{} ,这里不适用 ，Es6 导入模块  import ** from '标识符'
                 //哪些特性Node 支持呢？ 如果Chrome支持的那么Node都支持(Node抠出来谷歌浏览器的JavaScript 引擎环境))
-6. 配置实时打包 npm i webpack-dev-server -D 如果-D不行就用 -g
+6. 配置实时打包 cnpm i webpack-dev-server -D 如果-D不行就用 -g
         配置 package.json  "Script":{  "dev":"webpack-dev-server"}
         运行 npm run dev 
         安装：  npm i html-webpack-plugin -g(可以用来配置进入首页)

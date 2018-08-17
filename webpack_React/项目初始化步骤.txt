@@ -1,0 +1,58 @@
+//地址 ：git remote add origin https://github.com/HvaiY/ReactStudy.git
+  //git config --global user.name Test
+  //git config --global user.email Test@qq.com
+
+1. npm init -y  也可以使用 cnpm 处理 ：npm i cnpm -g （全局运行）
+2. 在项目中创建src和dist文件夹(dist项目完成的文件夹)
+3. 在src 目录下创建index.html
+4. 使用cnpm 安装webpack ，运行cnpm i webpack -D  //开发环境使用包
+                （1） cnpm :https://www.cnblogs.com/yominhi/p/7039795.htmlnpm
+                     改变环境变量运行： npm config set prefix "D:\SoftWare\NodeJs\node_global"
+                                    npm config set cache "D:\SoftWare\NodeJs\node_cache"
+                (2)在系统环境变量添加系统变量NODE_PATH，输入路径D:\Program Files\nodejs\node_global\node_modules，此后所安装的模块都会安装到改路径下  
+                (3)在命令行输入以下命令试着安装express（注：“-g”这个参数意思是装到global目录下，也就是上面说设置的“D:\Program Files\nodejs\node_global”里面。）
+                  npm install express -g
+                 安装完毕后可以看到.\node_global\node_modules\express 已经有内容
+              
+                (4)在命令行输入node进入编辑模式，输入以下代码测试是否能正常加载模块：
+                 require('express')的
+                 假设成功，可以看到有输出。假设出错，检查NODE_PATH路径。
+                 安装淘宝npm（cnpm）
+                  1.安装cnpm
+                (1)输入以下命令
+                   npm install -g cnpm --registry=https://registry.npm.taobao.org
+                    (2)输入cnpm -v输入是否正常，这里肯定会出错。
+                     cnpm -v
+                (3)添加系统变量path的内容
+              
+               　因为cnpm会被安装到D:\Program Files\nodejs\node_global下，而系统变量path并未包含该路径。在系统变量path下添加该路径即可正常使用cnpm。
+5. cnpm i webpack-cli -D  (新版需要)提供了打包工具
+   webpakc 默认约定大于配置的概念，约定 
+                                   打包文件入口 src->index.js
+                                   输出文件位置 dist->main.js
+
+                //webpack 基于Node  所以 支持node api 的语法，这里使用的是node 的语法
+                //向外暴露一个打包的配置 对象
+                module.exports={
+                    mode:'development',//也可以是production 
+                    //在webpack 中约定大于配置 ，约定 默认的打包入口路径是 src->index.js
+                }
+                
+                //ES6 向外导出模块api 是 export default{} ,这里不适用 ，Es6 导入模块  import ** from '标识符'
+                //哪些特性Node 支持呢？ 如果Chrome支持的那么Node都支持(Node抠出来谷歌浏览器的JavaScript 引擎环境))
+6. 配置实时打包 npm i webpack-dev-server -D 如果-D不行就用 -g
+        配置 package.json  "Script":{  "dev":"webpack-dev-server"}
+        运行 npm run dev 
+        安装：  npm i html-webpack-plugin -g(可以用来配置进入首页)
+ 
+7. *******************开始React**************************
+    增加react工具： cnpm i react react-dom -S
+      使用react  与 react-dom 来创建及渲染虚拟DOm元素 见index.js
+8. 为了方便在js中能够使用html标签写虚拟DOM元素 ，那么可以使用JSX 来处理 4.x需要写入babel
+   开启JSX: 安装插件
+   cnpm i babel-core babel-loader babel-plugin-transform-runtime -D
+   cnpm i babel-preset-env babel-preset-stage-0 -D
+   安装能够识别转换JSX语法的包 cnpm i babel-preset-react -D
+    安装完之后注意 配置：webpack.config.js  module以及.babelrc 配置插件和语法
+      配置完这些就可以直接使用JSX语法的Html标签了 
+9. JSX 需要注意的 class 需要用className 代替 for 需要forHtml代替 (js中有有class for 定义 因此 需要

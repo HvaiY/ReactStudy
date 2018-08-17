@@ -2,14 +2,19 @@
 import React from 'react' //创建组建 虚拟Dom元素 生命周期
 import ReactDOM from 'react-dom' //把创建好的组件 虚拟DOM 放到页面上展示 
 
-//组件第二种方式的使用
-//默认如果不做单独的配置的haunted不能省略.jsx后缀
-import Hello from './components/Hello.jsx'
+//第一种创建组件的方式 组件的首字母一定要大些
+function Hello(props){
+    //如果在一个组件中 return null 则表示组件是空的 上面都不会渲染
+   // return null
+   //在组件中必须返回一个合法的JSX 虚拟DOM元素
+return <div>这是一个Hello 组件--{props.name}---{props.age}---{props.gender}</div>
+//注意 ： 无人是vue还是react 中 ，组件的属性值是只读，不可重新赋值
+}
 
 const dog={
     name:'大黄',
     age:3,
-    gender:'雄' 
+    gender:'雄'
 }
 
 //调用render 函数渲染 jsx xml 可比html严格的多

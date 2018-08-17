@@ -55,4 +55,5 @@
    安装能够识别转换JSX语法的包 cnpm i babel-preset-react -D
     安装完之后注意 配置：webpack.config.js  module以及.babelrc 配置插件和语法
       配置完这些就可以直接使用JSX语法的Html标签了 
-9. JSX 需要注意的 class 需要用className 代替 for 需要forHtml代替 (js中有有class for 定义 因此 需要
+9. JSX 需要注意的 class 需要用className 代替 for 需要forHtml代替 (js中有有class for 定义 因此 需要改变)
+   另外 注释 {/* 这是注释*/} for map forEach 循环的需要加上key

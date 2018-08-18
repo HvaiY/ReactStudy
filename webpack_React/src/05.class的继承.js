@@ -18,12 +18,17 @@ class American extends Person{
 }
 
 //子类二
-class Chinese extends Person{}
+class Chinese extends Person{
+    constructor(name,age,IDNumber){
+        super(name,age);
+        this.IDNumber=IDNumber //子类特有的 
+    }
+}
 
 const a=new American('jack',22)
 a.show()
 console.log(a)
 
-const c=new Chinese('张三',23)
+const c=new Chinese('张三',23,'123458652****')
 a.show()
 console.log(c)

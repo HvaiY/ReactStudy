@@ -24,7 +24,13 @@ module.exports = {
                  exclude: /node_modules/
              }//千万别忘记添加exclude 排除项
          ]
-     }
+     },
+     resolve:{
+         extensions:['.js','.jsx','.json'], //表示这几种后缀名的文件后缀名不用写，会补齐
+    alias:{
+        '@':path.join(__dirname,'./src')//这就表示 @ 为根目录src这一路径
+    }
+        }
 }
 
 //ES6 向外导出模块api 是 export default{} ,这里不适用 ，Es6 导入模块  import ** from '标识符'

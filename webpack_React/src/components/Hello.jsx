@@ -1,6 +1,6 @@
 import React from 'react' //组件用到react 因此需要导入react
 
-//第二种创建组件的方式 组件的首字母一定要大些 /创并导出
+// 组件的首字母一定要大些 /创并导出
 export default function Hello(props){
     //如果在一个组件中 return null 则表示组件是空的 上面都不会渲染
    // return null

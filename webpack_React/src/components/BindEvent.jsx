@@ -1,9 +1,8 @@
 import React from 'react'
-
-export default class BindEvent extends React.Component {
+//#region 介绍React中绑定事件的标准格式
+ export default class BindEvent extends React.Component {
     constructor() {
         super()
-
         //私有数据
         this.state = {
             msg: '哈哈哈'
@@ -35,3 +34,4 @@ export default class BindEvent extends React.Component {
         console.log('海嗨嗨嗨'+arg1+arg2)
     }
 }
+//#endregion

@@ -58,7 +58,7 @@
       配置完这些就可以直接使用JSX语法的Html标签了 
 9. JSX 需要注意的 class 需要用className 代替 for 需要forHtml代替 (js中有有class for 定义 因此 需要改变)
    另外 注释 {/* 这是注释*/} for map forEach 循环的需要加上key
-10. 需要使用css 样式 需要插件
+10. 需要使用css 样式 需要插件 插件用于打包
       npm i style-loader css-loader -D
       还需要配置打包具体看配置文件
 
@@ -67,3 +67,5 @@
       //字体打包处理 插件 npm i url-loader -D
      //文件处理：npm i file-loader -D
       //scss 模块化处理 安装能够解析scss文件的loader ： npm i sass-loader node-sass -D
+
+生命周期 略

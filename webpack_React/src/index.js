@@ -1,7 +1,8 @@
 //导入包
 import React from 'react' //创建组建 虚拟Dom元素 生命周期
 import ReactDOM from 'react-dom' //把创建好的组件 虚拟DOM 放到页面上展示 
-
+import cssobj from '@/css/cmtlist.css' 
+console.log(cssobj)
 // function CmtItem(props){
 //     return <div key={props.id}>
 //     <h1>评论人：{props.user}</h1>
@@ -30,7 +31,7 @@ import ReactDOM from 'react-dom' //把创建好的组件 虚拟DOM 放到页面�
 //         </div>
 //     }
 // } //抽离到jsx
-import CmtList from '@/components/CmtLIst' //使用@绝对路径(@路径需要配置)更简单，容易避免BUG
+import CmtList from '@/components/CmtList2' //使用@绝对路径(@路径需要配置)更简单，容易避免BUG
 
 //调用render 函数渲染 jsx xml 可比html严格的多
 ReactDOM.render(<div>

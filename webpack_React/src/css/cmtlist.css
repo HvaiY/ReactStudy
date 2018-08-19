@@ -1,9 +1,12 @@
 .title{
     color: red;
+    font-size:'35px';
+    font-weight:'200px';
+    text-align: center
 }
 /* 模块化 只针对类选择器和Id选择器有效，不会将标签选择器模块化 */
 /* 下面的好h1全局有效 ，前提是引入了该css文件*/
-h1{
+/* h1{
 font-style: italic;
 }
 
@@ -13,4 +16,4 @@ font-style: italic;
 #cmtItme{
     font-size: 12px;
     color:coral;
-}
+} */

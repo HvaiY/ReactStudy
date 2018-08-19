@@ -24,8 +24,9 @@ module.exports = {
                  exclude: /node_modules/
              },//千万别忘记添加exclude 排除项
              {
-                 //普通css样式启用模块化 在css-loader后面加上?modules //注意重启 npm run dev
-                 test:/\.css$/,use:['style-loader','css-loader?modules'] //打包处理css样式的第三方插件
+                 //普通css样式启用模块化 在css-loader后面加上?modules //注意重启 npm run dev 
+                 // localIdentName=[path][name]-[local]-[hash:5] 这一段表示自定义模块化的名称。生成的是一堆瞎七瞎八的字符
+                 test:/\.css$/,use:['style-loader','css-loader?modules&localIdentName=[path][name]-[local]-[hash:5]'] //打包处理css样式的第三方插件
              }
          ]
      },

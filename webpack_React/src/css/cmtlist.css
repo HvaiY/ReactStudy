@@ -1,3 +1,9 @@
+/* 注意 被：local()包裹起来的类名，会被模块化。默认情况下 ，所有的类名和ID都备模块化了 ，所以可以不加:local() */
+/* 然而 被:global()包裹的类名不会被模块化，他是一个全局的样式，全局有效 如.test*/
+:global(.test){
+    color: bisque;
+}
+
 .title{
     color: red;
     font-size:'35px';

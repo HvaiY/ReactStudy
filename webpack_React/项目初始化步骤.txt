@@ -61,3 +61,5 @@
 10. 需要使用css 样式 需要插件
       npm i style-loader css-loader -D
       还需要配置打包具体看配置文件
+
+      引入Bootstrap: npm i bootstrap@3.3.7 -S

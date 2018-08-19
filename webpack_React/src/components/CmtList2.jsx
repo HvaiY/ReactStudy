@@ -1,6 +1,6 @@
 import React from 'react'
 //导入需要的组件样式
-import cssobj from '@/css/cmtlist.css' //后缀名不能省略 2.这里因为在webpack.config做了css模块化处理，隐藏 cssobj 会是一个对象了
+import cssobj from '@/css/cmtlist.scss' //后缀名不能省略 2.这里因为在webpack.config做了css模块化处理，隐藏 cssobj 会是一个对象了
 import CmtItem from '@/components/CmtItem2'
 
 export default class CmtList extends React.Component {

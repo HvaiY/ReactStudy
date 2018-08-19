@@ -63,3 +63,7 @@
       还需要配置打包具体看配置文件
 
       引入Bootstrap: npm i bootstrap@3.3.7 -S
+
+      //字体打包处理 插件 npm i url-loader -D
+     //文件处理：npm i file-loader -D
+      //scss 模块化处理 安装能够解析scss文件的loader ： npm i sass-loader node-sass -D

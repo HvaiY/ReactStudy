@@ -1,5 +1,5 @@
 
-//Person
+//Person 组件方式
 function Person(name,age){
     this.name=name
     this.age=age

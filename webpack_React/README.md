@@ -6,7 +6,6 @@ typora-copy-images-to: ./media
 
 ## React 介绍
 
-![react-logo](./media/react-logo.png)
 
 - React 是一个用于构建用户界面的渐进式 JavaScript 库
   - 本身只处理 UI

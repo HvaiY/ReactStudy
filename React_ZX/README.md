@@ -10,3 +10,4 @@
      `<script src="./bower_components/react/react-dom.development.js"></script>`
      `<script src="./bower_components/babel/browser.js"></script>`
      - 与传智差不多 后面略略略
+     - React [中文社区](http://react-china.org/)
